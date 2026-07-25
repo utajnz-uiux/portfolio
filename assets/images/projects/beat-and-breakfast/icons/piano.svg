@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="32px" viewBox="0 0 33 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>klavier</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Startseite-ohne-Navi" transform="translate(-949.000000, -4047.000000)" stroke="#1C1B20" stroke-width="1.5">
+            <g id="klavier" transform="translate(950.273749, 4047.797679)">
+                <path d="M30.7680076,23.6576776 C31.2523932,18.6383632 29.4350444,15.951172 25.3159613,15.596104 C18.5749646,15.4313007 18.9403224,10.9642793 18.9343396,8.76596496 C18.9106354,5.68372256 15.9958653,0.238253018 9.71221641,0 C1.70696099,0.227783736 -0.101877463,7.35807351 0.00433039951,10.4638366 C0.013566976,14.5197132 0.013566976,18.9176602 0.00433039951,23.6576776 L30.7680076,23.6576776 Z" id="Path-27" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Path-28" stroke-linecap="round" stroke-linejoin="round" points="29.5986876 23.6576776 29.5986876 30 1.24443152 30 1.24443152 23.6576776"></polyline>
+                <rect id="Rectangle" x="5.84559588" y="24.6260539" width="1.13806887" height="2.45710331"></rect>
+                <rect id="Rectangle-Copy-25" x="11.7812508" y="24.6260539" width="1.13806887" height="2.45710331"></rect>
+                <rect id="Rectangle-Copy-26" x="17.7169058" y="24.6260539" width="1.13806887" height="2.45710331"></rect>
+                <rect id="Rectangle-Copy-27" x="23.6525608" y="24.6260539" width="1.13806887" height="2.45710331"></rect>
+                <line x1="6.41463032" y1="27.5154304" x2="6.41463032" y2="30" id="Path-29" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="12.3502853" y1="27.5154304" x2="12.3502853" y2="30" id="Path-29-Copy" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="18.2859402" y1="27.5154304" x2="18.2859402" y2="30" id="Path-29-Copy-2" stroke-linecap="round" stroke-linejoin="round"></line>
+                <line x1="24.2215952" y1="27.5154304" x2="24.2215952" y2="30" id="Path-29-Copy-3" stroke-linecap="round" stroke-linejoin="round"></line>
+            </g>
+        </g>
+    </g>
+</svg>

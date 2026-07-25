@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="30px" viewBox="0 0 41 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>handdtücher</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Startseite-ohne-Navi" transform="translate(-948.000000, -4109.000000)" stroke="#1C1B20" stroke-width="1.5">
+            <g id="handdtücher" transform="translate(948.000000, 4109.000000)">
+                <rect id="Rectangle" x="0.75" y="18.9078947" width="38.7631579" height="3.23684211"></rect>
+                <rect id="Rectangle" x="6.06578947" y="0.75" width="26.9210526" height="3.23684211" rx="1.61842105"></rect>
+                <rect id="Rectangle-Copy-29" x="6.06578947" y="4.69736842" width="26.9210526" height="4.02631579" rx="2"></rect>
+                <rect id="Rectangle-Copy-30" x="4.69736842" y="9.43421053" width="30.0789474" height="4.02631579" rx="2"></rect>
+                <rect id="Rectangle-Copy-31" x="4.69736842" y="14.1710526" width="30.0789474" height="4.02631579" rx="2"></rect>
+                <path d="M36.6878432,22.8552632 L35.7357292,29.25 L32.4681298,29.25 L31.2115566,22.8552632 L36.6878432,22.8552632 Z" id="Rectangle-Copy-28"></path>
+                <path d="M9.05626428,22.8552632 L8.10415025,29.25 L4.83655088,29.25 L3.57997768,22.8552632 L9.05626428,22.8552632 Z" id="Rectangle-Copy-32" transform="translate(6.297229, 26.052632) scale(-1, 1) translate(-6.297229, -26.052632) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

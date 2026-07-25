@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>P</title>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Startseite-ohne-Navi" transform="translate(-152.000000, -3988.000000)">
+            <g id="P" transform="translate(152.000000, 3988.000000)">
+                <text font-family="RedHatDisplay-Medium, Red Hat Display" font-size="19.8" font-weight="400" letter-spacing="0.123750003" fill="#1C1B20">
+                    <tspan x="9.19354839" y="21.9462366">P</tspan>
+                </text>
+                <rect id="Rectangle" stroke="#1C1B20" stroke-width="1.5" x="0.75" y="0.75" width="28.5" height="28.5" rx="1.8"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

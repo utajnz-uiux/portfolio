@@ -12,7 +12,8 @@
 <body>
 
 <nav>
-  <div class="brand"><svg class="brand-logo" viewBox="0 0 276 206" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <div class="site-container nav-inner">
+  <a href="#" class="brand"><svg class="brand-logo" viewBox="0 0 276 206" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <g filter="url(#filter0_g_2_8)">
 <path d="M157.328 150.831C157.328 150.831 113.328 167.5 68.3278 139.5C23.3277 111.5 27.0765 27 27.0765 27C43.0765 27 47.0765 27 64.5765 27C72.3278 139 88.216 134.747 125.328 178.5C125.328 178.5 163.325 181.635 206.076 139.5C219.219 126.546 228.322 110.925 234.626 95.5C248.828 60.7509 248.828 27 248.828 27H209.828C209.828 27 207.336 95.3306 157.328 150.831ZM125.328 178.5C137.974 169.969 148.526 160.599 157.328 150.831" stroke="black" stroke-width="6"/>
 </g>
@@ -27,11 +28,8 @@
 </feMerge>
 </filter>
 </defs>
-</svg><span class="name">Uta Janzen</span></div>
-  <div class="links">
-    <a href="#work">Arbeit</a>
-    <a href="#about">Über mich</a>
-    <a href="#connect">Kontakt</a>
+</svg><span class="name">Uta Janzen</span></a>
+  <a class="btn-primary nav-cta booking-link" href="mailto:Uta.jnz@gmail.com?subject=Schedule%20an%20intro">Schedule an intro</a>
   </div>
 </nav>
 
@@ -49,7 +47,7 @@
 </section>
 
 <section class="next-section" id="work">
-  <div class="offers">
+  <div class="site-container offers">
     <span class="offers-eyebrow">How We Work Together</span>
 
     <div class="offer-row">
@@ -79,22 +77,22 @@
 </section>
 
 <section class="gallery-section" id="projects">
-  <div class="gallery-head">
+  <div class="site-container gallery-head">
     <span class="gallery-eyebrow">Selected Work</span>
     <h2 class="gallery-headline" id="galleryHeadline">Project Name</h2>
   </div>
 
   <div class="carousel-track" id="carouselTrack">
 
-    <a class="case-card" href="#" data-name="Project One">
+    <a class="case-card" href="projects/beat-and-breakfast.html" data-name="Beat and Breakfast">
       <div class="case-media">
-        <span class="case-badge"><span class="dot"></span>Role</span>
-        Add case study image
+        <span class="case-badge"><span class="dot"></span>UX/UI &amp; PM</span>
+        <img src="assets/images/projects/beat-and-breakfast/hero.png" alt="">
       </div>
       <div class="case-info">
-        <h3>Project One</h3>
-        <p>Short case study description goes here — one to two lines.</p>
-        <div class="case-tags"><span>Tag</span><span>Tag</span><span>Tag</span></div>
+        <h3>Beat and Breakfast</h3>
+        <p>Holiday home for musicians — from email bookings to a transparent online booking experience.</p>
+        <div class="case-tags"><span>Website UX/UI</span><span>Booking Flow</span><span>Logo/Icon Design</span></div>
         <span class="case-link">Read Case &rarr;</span>
       </div>
     </a>
@@ -155,12 +153,14 @@
 </section>
 
 <section class="about-section" id="about">
-  <div class="about-grid">
+  <div class="site-container about-container">
+    <span class="about-eyebrow">About Me</span>
+    <div class="about-grid">
     <div class="about-text">
       <p>A researcher and builder at the intersection of AI, product, and design — I ship what I make.</p>
       <p>I spent <strong>2.5+ years embedded at IBM iX</strong>, working as one of the leading UX designers responsible for applications on a global automotive aftersales platform used by 5,000+ dealerships across 54 countries.</p>
       <p>During that, I co-founded <strong>Tapari</strong>, a startup building sensor-based interactive hardware, funded by <strong>Hessen Ideen</strong> and <strong>EXIST</strong> — more at <a href="https://tapari.de" target="_blank" rel="noopener">tapari.de</a>.</p>
-      <p>I hold an <strong>M.A. in Leadership in Digital Innovation</strong> from UdK Berlin (grade 1.3), where my thesis explored how AI is reshaping UX practice — audit trails, governance, and trust included.</p>
+      <p>I hold an <strong>M.A. in Leadership in Digital Innovation</strong> from UdK Berlin (grade 1.3), where <a href="https://ux-design-in-ai-economies.netlify.app" target="_blank" rel="noopener">my thesis</a> explored how AI is reshaping UX practice — audit trails, governance, and trust included.</p>
 
       <hr class="about-divider">
 
@@ -170,23 +170,17 @@
         <div class="role-row"><span class="role-title">M.A. Leadership in Digital Innovation</span><span class="role-dash">&mdash;</span><span class="role-company">UdK Berlin</span></div>
       </div>
 
-      <a class="about-linkedin" href="https://www.linkedin.com/in/utajanzen/" target="_blank" rel="noopener">LinkedIn &#8599;</a>
     </div>
 
     <div class="about-portrait">
-<img class="portrait-img" src="assets/images/portrait.png" alt="Portrait of Uta Janzen">
-      <span class="portrait-deco deco-block"></span>
-      <span class="portrait-deco deco-line"></span>
-      <span class="portrait-deco deco-dots">
-        <span></span><span></span><span></span>
-        <span></span><span></span><span></span>
-      </span>
+      <img class="portrait-img" src="assets/images/portrait.png" alt="Portrait of Uta Janzen">
+    </div>
     </div>
   </div>
 </section>
 
 <section class="connect-section" id="connect">
-  <div class="connect-grid">
+  <div class="site-container connect-grid">
     <div>
       <span class="connect-eyebrow">Skills &amp; Tools</span>
       <div class="skills-columns">
@@ -194,6 +188,7 @@
           <h4>Design</h4>
           <ul>
             <li>Product Design</li>
+            <li>Information Architecture</li>
             <li>UX Research</li>
             <li>Interaction Design</li>
             <li>Design Systems</li>
@@ -204,6 +199,11 @@
           <h4>Tools</h4>
           <ul>
             <li>Figma</li>
+            <li>Notion</li>
+            <li>Jira</li>
+            <li>Cursor AI</li>
+            <li>Claude Code</li>
+            <li>Claude Design</li>
           </ul>
         </div>
       </div>
@@ -216,16 +216,21 @@
         <a href="mailto:Uta.jnz@gmail.com">Uta.jnz@gmail.com</a>
         <a href="https://www.linkedin.com/in/utajanzen/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-      <div class="connect-cta">
-        <p>The obstacle you are facing</p>
-        <p>is the way forward.</p>
-        <p>Let's talk!</p>
-        <a class="connect-cta-btn" href="mailto:Uta.jnz@gmail.com" style="margin-top: 1.4rem;">Schedule an intro &rarr;</a>
+      <div class="connect-cta" id="contact">
+        <h2 class="connect-cta-title">
+          <span class="connect-cta-muted">The obstacle you are facing<br>is the way forward.</span><br>
+          Let's talk!
+        </h2>
+        <div class="connect-cta-actions">
+          <a class="btn-primary booking-link" href="mailto:Uta.jnz@gmail.com?subject=Schedule%20an%20intro">Schedule an intro</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
+<script src="assets/js/site-config.js"></script>
+<script src="assets/js/booking-links.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
