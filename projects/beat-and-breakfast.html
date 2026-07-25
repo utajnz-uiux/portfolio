@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/styles.css">
 <link rel="stylesheet" href="../assets/css/case-study.css">
+<link rel="stylesheet" href="../assets/css/booking-prototype.css">
 </head>
 <body>
 
@@ -164,18 +165,18 @@ The challenge: move the on-/offline booking flow from email traffic to a smooth 
   <section class="case-media-block">
     <div class="case-container">
       <div class="icon-kit-grid">
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/kitchen.svg" alt=""><span>Kitchen</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/parking.svg" alt=""><span>Parking</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/sauna.svg" alt=""><span>Sauna</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/garden.svg" alt=""><span>Garden</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/wifi.svg" alt=""><span>WiFi</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/hot-tub.svg" alt=""><span>Hot tub</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/terrace.svg" alt=""><span>Terrace</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/fireplace.svg" alt=""><span>Fireplace</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/grill.svg" alt=""><span>Grill</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/piano.svg" alt=""><span>Piano</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/towels.svg" alt=""><span>Towels</span></div>
-        <div class="icon-kit-item"><img src="../assets/images/projects/beat-and-breakfast/icons/yoga.svg" alt=""><span>Yoga</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/kitchen.svg" alt=""></div><span>Kitchen</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/parking.svg" alt=""></div><span>Parking</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/sauna.svg" alt=""></div><span>Sauna</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/garden.svg" alt=""></div><span>Garden</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/wifi.svg" alt=""></div><span>WiFi</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/hot-tub.svg" alt=""></div><span>Hot tub</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/terrace.svg" alt=""></div><span>Terrace</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/fireplace.svg" alt=""></div><span>Fireplace</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/grill.svg" alt=""></div><span>Grill</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/piano.svg" alt=""></div><span>Piano</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/towels.svg" alt=""></div><span>Towels</span></div>
+        <div class="icon-kit-item"><div class="icon-kit-icon"><img src="../assets/images/projects/beat-and-breakfast/icons/yoga.svg" alt=""></div><span>Yoga</span></div>
       </div>
     </div>
   </section>
@@ -184,6 +185,169 @@ The challenge: move the on-/offline booking flow from email traffic to a smooth 
     <div class="case-container">
       <h2 class="case-section-title">Booking flow</h2>
       <p class="case-lead">From email-based requests to a transparent online booking experience — with clear pricing, house rules, and add-on options visible before guests reach out.</p>
+    </div>
+  </section>
+
+  <section class="case-media-block booking-prototype-section">
+    <div class="case-container">
+      <p class="booking-prototype-intro">Interactive prototype — tap through the booking flow as designed. Pricing and house rules visible before guests send a request.</p>
+      <div class="booking-prototype-wrap">
+        <div class="booking-app" id="bookingApp">
+          <div class="booking-app-header">
+            <img class="booking-app-logo" src="../assets/images/projects/beat-and-breakfast/logo-horizontal.png" alt="Beat and Breakfast">
+            <div class="booking-steps" aria-hidden="true">
+              <span class="booking-step-dot is-active"></span>
+              <span class="booking-step-dot"></span>
+              <span class="booking-step-dot"></span>
+              <span class="booking-step-dot"></span>
+              <span class="booking-step-dot"></span>
+            </div>
+          </div>
+
+          <div class="booking-app-body">
+            <div class="booking-panel is-active" data-step="0">
+              <h3 class="booking-panel-title">Choose your offer</h3>
+              <p class="booking-panel-lead">Pick accommodation, rehearsal, recording, or the full band retreat package.</p>
+              <div class="booking-offer-grid">
+                <button type="button" class="booking-offer-card" data-offer="holiday">
+                  <strong>Holiday home</strong>
+                  <span>Musician retreat — sleep, eat, make music.</span>
+                  <em>from €189 / night</em>
+                </button>
+                <button type="button" class="booking-offer-card" data-offer="rehearsal">
+                  <strong>Rehearsal room</strong>
+                  <span>Fully equipped rehearsal space for bands.</span>
+                  <em>from €95 / day</em>
+                </button>
+                <button type="button" class="booking-offer-card" data-offer="recording">
+                  <strong>Recording studio</strong>
+                  <span>Professional recording setup on site.</span>
+                  <em>from €320 / day</em>
+                </button>
+                <button type="button" class="booking-offer-card" data-offer="package">
+                  <strong>Band retreat package</strong>
+                  <span>3 nights lodging + rehearsal + studio time.</span>
+                  <em>€890 package</em>
+                </button>
+              </div>
+            </div>
+
+            <div class="booking-panel" data-step="1">
+              <h3 class="booking-panel-title">Dates &amp; guests</h3>
+              <p class="booking-panel-lead">Select your stay — pricing updates automatically in the next step.</p>
+              <div class="booking-field-row">
+                <div class="booking-field">
+                  <label for="bbCheckIn">Check-in</label>
+                  <input type="date" id="bbCheckIn" data-field="checkIn">
+                </div>
+                <div class="booking-field">
+                  <label for="bbCheckOut">Check-out</label>
+                  <input type="date" id="bbCheckOut" data-field="checkOut">
+                </div>
+              </div>
+              <div class="booking-field">
+                <label for="bbGuests">Guests</label>
+                <select id="bbGuests" data-field="guests">
+                  <option value="1">1 guest</option>
+                  <option value="2" selected>2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="5">5 guests</option>
+                  <option value="6">6 guests</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="booking-panel" data-step="2">
+              <h3 class="booking-panel-title">Extras &amp; wellness</h3>
+              <p class="booking-panel-lead">Optional add-ons — no surprises later in the email thread.</p>
+              <div class="booking-extra-list">
+                <label class="booking-extra-item">
+                  <input type="checkbox" data-extra value="sauna">
+                  <div>
+                    <strong>Private sauna</strong>
+                    <span>2-hour slot, towels included.</span>
+                    <em>+ €45 / session</em>
+                  </div>
+                </label>
+                <label class="booking-extra-item">
+                  <input type="checkbox" data-extra value="hottub">
+                  <div>
+                    <strong>Hot tub</strong>
+                    <span>Evening slot under the stars.</span>
+                    <em>+ €35 / session</em>
+                  </div>
+                </label>
+                <label class="booking-extra-item">
+                  <input type="checkbox" data-extra value="breakfast">
+                  <div>
+                    <strong>Breakfast basket</strong>
+                    <span>Local bakery, fruit, coffee &amp; tea.</span>
+                    <em>+ €18 / person / day</em>
+                  </div>
+                </label>
+                <label class="booking-extra-item">
+                  <input type="checkbox" data-extra value="late">
+                  <div>
+                    <strong>Late checkout</strong>
+                    <span>Stay until 2 pm on departure day.</span>
+                    <em>+ €50 once</em>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="booking-panel" data-step="3">
+              <h3 class="booking-panel-title">Pricing overview</h3>
+              <p class="booking-panel-lead">Every line item visible before you reach out — the core UX improvement.</p>
+              <div class="booking-price-list" data-price-list></div>
+              <div class="booking-rules">
+                <h4>House rules</h4>
+                <ul>
+                  <li>Quiet hours after 10 pm — neighbours &amp; studio gear</li>
+                  <li>No shoes in the rehearsal room</li>
+                  <li>Smoking outside only</li>
+                  <li>Pets on request</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="booking-panel" data-step="4">
+              <h3 class="booking-panel-title">Send request</h3>
+              <p class="booking-panel-lead">Non-binding inquiry — the host confirms availability within 24 hours.</p>
+              <div class="booking-field">
+                <label for="bbName">Name</label>
+                <input type="text" id="bbName" data-field="name" placeholder="Your name" autocomplete="name">
+              </div>
+              <div class="booking-field">
+                <label for="bbEmail">Email</label>
+                <input type="email" id="bbEmail" data-field="email" placeholder="you@band.com" autocomplete="email">
+              </div>
+              <div class="booking-field">
+                <label for="bbMessage">Message (optional)</label>
+                <textarea id="bbMessage" data-field="message" rows="3" placeholder="Band name, gear needs, arrival time…"></textarea>
+              </div>
+              <label class="booking-check">
+                <input type="checkbox" data-field="rulesAccepted">
+                <span>I have read the house rules and agree to the booking terms.</span>
+              </label>
+            </div>
+
+            <div class="booking-panel" data-step="5">
+              <div class="booking-success">
+                <div class="booking-success-icon" aria-hidden="true">✓</div>
+                <h3>Request sent</h3>
+                <p>Your inquiry with full pricing is on its way. No back-and-forth quoting needed.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-app-footer">
+            <button type="button" class="booking-btn booking-btn--back" data-action="back">Back</button>
+            <button type="button" class="booking-btn booking-btn--next" data-action="next" disabled>Continue</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -246,5 +410,6 @@ Designing for a musician audience meant leaning into bold typography and a hands
 <script src="../assets/js/site-config.js"></script>
 <script src="../assets/js/booking-links.js"></script>
 <script src="../assets/js/case-study.js"></script>
+<script src="../assets/js/booking-prototype.js"></script>
 </body>
 </html>
