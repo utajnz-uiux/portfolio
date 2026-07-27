@@ -233,44 +233,81 @@
   .work-projects {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 6rem;
   }
 
   .work-project-header {
-    padding: 0 0 1.5rem;
+    padding: 0 0 1rem;
   }
 
   .work-project:first-child .work-project-header {
     padding-top: 0;
   }
 
-  .work-project-header-grid:has(.work-project-testimonial) {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "logo"
-      "main"
-      "testimonial";
+  .work-project-header-grid {
+    display: flex;
+    flex-direction: column;
   }
 
-  .work-project-header-grid:has(.work-project-testimonial) .work-project-logo {
-    grid-area: logo;
+  .work-project.has-testimonial:not(.work-project--thesis) {
+    display: flex;
+    flex-direction: column;
   }
 
-  .work-project-header-grid:has(.work-project-testimonial) .work-project-main {
-    grid-area: main;
+  .work-project.has-testimonial .work-project-intro {
+    display: contents;
   }
 
-  .work-project-header-grid:has(.work-project-testimonial) .work-project-testimonial {
-    grid-area: testimonial;
+  .work-project.has-testimonial:not(.work-project--thesis) .work-project-header {
+    order: 1;
+    padding-bottom: 0.75rem;
+  }
+
+  .work-project.has-testimonial:not(.work-project--thesis) .work-project-media {
+    order: 2;
+  }
+
+  .work-project.has-testimonial:not(.work-project--thesis) .work-project-testimonial {
+    order: 3;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     border-top: 1px solid rgba(26, 19, 16, 0.12);
   }
 
-  .work-project-header-grid:not(:has(.work-project-testimonial)) {
-    display: flex;
-    flex-direction: column;
+  .work-project--thesis.has-testimonial .work-project-testimonial {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  /* Thesis — headline + quotes, then image */
+  .work-project--thesis.has-testimonial {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "testimonial"
+      "media";
+    row-gap: 1.25rem;
+  }
+
+  .work-project--thesis .work-project-intro,
+  .work-project--thesis .work-project-header,
+  .work-project--thesis .work-project-header-grid {
+    display: contents;
+  }
+
+  .work-project--thesis .work-project-main {
+    grid-area: main;
+  }
+
+  .work-project--thesis .work-project-testimonial {
+    grid-area: testimonial;
+  }
+
+  .work-project--thesis .work-project-media {
+    grid-area: media;
+    margin-top: 0;
   }
 
   .work-project-logo {
@@ -320,14 +357,33 @@
     line-height: 1.5;
     color: rgba(26, 19, 16, 0.45);
     max-width: 36rem;
+    margin-bottom: 1.25rem;
   }
 
   .work-project-status {
     display: block;
     margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
     font-size: 1rem;
     font-weight: 300;
     color: rgba(26, 19, 16, 0.45);
+  }
+
+  .work-project-status-sep {
+    margin: 0 0.35em;
+  }
+
+  .work-project-status a {
+    color: rgba(26, 19, 16, 0.55);
+    text-decoration: underline;
+    text-decoration-color: rgba(26, 19, 16, 0.25);
+    text-underline-offset: 0.15em;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  }
+
+  .work-project-status a:hover {
+    color: var(--red);
+    text-decoration-color: var(--red);
   }
 
   .work-project-quote {
@@ -363,25 +419,55 @@
     color: rgba(26, 19, 16, 0.45);
   }
 
+  .work-project-testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .work-project-testimonial-item:not(:last-child) {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(26, 19, 16, 0.12);
+  }
+
+  .work-project--thesis .work-project-testimonial-item:not(:last-child) {
+    margin-bottom: 1.75rem;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: 1024px) {
+    .work-project--thesis .work-project-testimonial-item:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
   .work-project-media {
     overflow: hidden;
     border-radius: 12px;
-    padding-bottom: 2.5rem;
+    isolation: isolate;
+    clip-path: inset(0 round 12px);
+    margin-top: 1.5rem;
+  }
+
+  .work-project--thesis .work-project-media {
+    margin-top: 0;
   }
 
   .work-project-media a {
     display: block;
     text-decoration: none;
-    border-radius: 12px;
     overflow: hidden;
+    border-radius: 12px;
   }
 
   .work-project-media img {
     display: block;
     width: 100%;
     height: auto;
-    object-fit: contain;
     border-radius: 12px;
+    vertical-align: top;
   }
 
   .work-project-media--placeholder {
@@ -402,36 +488,80 @@
     }
 
     .work-projects {
-      gap: 4rem;
+      gap: 7rem;
     }
 
     .work-project-header {
-      padding-bottom: 2rem;
+      padding-bottom: 1.25rem;
     }
 
     .work-project:first-child .work-project-header {
       padding-top: 0;
     }
 
-    .work-project-header-grid:has(.work-project-testimonial) {
+    .work-project.has-testimonial:not(.work-project--thesis) {
+      display: block;
+    }
+
+    .work-project--thesis.has-testimonial {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "main testimonial"
+        "media media";
+      column-gap: 4rem;
+      row-gap: 1rem;
+    }
+
+    .work-project--thesis .work-project-media {
+      grid-column: 1 / -1;
+    }
+
+    .work-project--thesis .work-project-testimonial {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .work-project.has-testimonial:not(.work-project--thesis) .work-project-intro {
+      display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "logo ."
         "main testimonial";
       column-gap: 4rem;
-      row-gap: 0;
       align-items: start;
+      padding-bottom: 0;
+    }
+
+    .work-project:not(.work-project--thesis) .work-project-media {
+      margin-top: 2rem;
+    }
+
+    .work-project.has-testimonial:not(.work-project--thesis) .work-project-header,
+    .work-project.has-testimonial:not(.work-project--thesis) .work-project-header-grid {
+      display: contents;
+    }
+
+    .work-project.has-testimonial:not(.work-project--thesis) .work-project-logo {
+      grid-area: logo;
+    }
+
+    .work-project.has-testimonial:not(.work-project--thesis) .work-project-main {
+      grid-area: main;
+    }
+
+    .work-project.has-testimonial:not(.work-project--thesis) .work-project-testimonial {
+      grid-area: testimonial;
+      order: unset;
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
     }
 
     .work-project-header-grid:not(:has(.work-project-testimonial)) {
       display: flex;
       flex-direction: column;
-    }
-
-    .work-project-header-grid:has(.work-project-testimonial) .work-project-testimonial {
-      margin-top: 0;
-      padding-top: 0;
-      border-top: none;
     }
 
     .work-project-logo {
@@ -447,12 +577,13 @@
       margin-bottom: 1.25rem;
     }
 
-    .work-project-status {
-      margin-top: 1rem;
+    .work-project-meta {
+      margin-bottom: 1.5rem;
     }
 
-    .work-project-media {
-      padding-bottom: 2.5rem;
+    .work-project-status {
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
     }
   }
 

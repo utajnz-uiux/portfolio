@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 875" fill="none">
+  <rect width="1400" height="875" fill="#0a0a08"/>
+  <text x="1050" y="520" fill="#f5f2eb" opacity="0.04" font-family="Georgia, serif" font-size="420" font-weight="700">UX</text>
+  <text x="80" y="110" fill="#6b6b60" font-family="Arial, sans-serif" font-size="22" letter-spacing="0.18em">MASTER'S THESIS / UDK BERLIN / 2025</text>
+  <text x="80" y="220" fill="#f5f2eb" font-family="Georgia, serif" font-size="72" font-weight="500">UX is not a feature.</text>
+  <text x="80" y="300" fill="#c8ff00" font-family="Georgia, serif" font-size="72" font-weight="500">It's governance.</text>
+  <text x="80" y="390" fill="#6b6b60" font-family="Arial, sans-serif" font-size="26" font-weight="300">3 organizations / 4 frameworks / A x B x C x D model</text>
+  <g transform="translate(80 460)">
+    <rect width="1240" height="320" rx="12" fill="#141412" stroke="rgba(245,242,235,0.12)"/>
+    <text x="32" y="48" fill="#6b6b60" font-family="Arial, sans-serif" font-size="18" letter-spacing="0.12em">FRAMEWORK COVERAGE HEATMAP</text>
+    <g transform="translate(32 80)">
+      <rect width="170" height="44" rx="4" fill="#2a2a25"/>
+      <rect x="190" width="170" height="44" rx="4" fill="#3d5a20"/>
+      <rect x="380" width="170" height="44" rx="4" fill="#3d5a20"/>
+      <rect x="570" width="170" height="44" rx="4" fill="#3d5a20"/>
+      <rect x="760" width="170" height="44" rx="4" fill="#7a5518"/>
+      <rect y="58" width="170" height="44" rx="4" fill="#3d5a20"/>
+      <rect x="190" y="58" width="170" height="44" rx="4" fill="#3d5a20"/>
+      <rect x="380" y="58" width="170" height="44" rx="4" fill="#7a5518"/>
+      <rect x="570" y="58" width="170" height="44" rx="4" fill="#3d5a20"/>
+      <rect x="760" y="58" width="170" height="44" rx="4" fill="#7a2210"/>
+      <text x="950" y="92" fill="#f5f2eb" font-family="Arial, sans-serif" font-size="56" font-weight="500">43%</text>
+      <text x="950" y="130" fill="#6b6b60" font-family="Arial, sans-serif" font-size="20">AI curation work</text>
+    </g>
+  </g>
+</svg>
