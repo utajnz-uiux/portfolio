@@ -312,9 +312,8 @@
 
   .work-project-logo {
     display: block;
-    height: 2rem;
-    width: auto;
-    max-width: 18rem;
+    width: min(100%, 20rem);
+    height: auto;
     margin-bottom: 1.25rem;
     filter: brightness(0);
   }
@@ -565,6 +564,7 @@
     }
 
     .work-project-logo {
+      width: auto;
       height: 3rem;
       max-width: 22rem;
       margin-bottom: 1.5rem;
