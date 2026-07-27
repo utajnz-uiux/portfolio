@@ -369,10 +369,10 @@ html.js-reveal .case-reveal.is-visible > * {
   padding: var(--space-section) 0 0;
 }
 
-/* Back-to-back text sections (Solution, Results, Outcome) */
-.case-text-block--feature + .case-text-block--feature,
-.case-text-block--feature + .case-text-block {
-  padding-top: calc(var(--space-section) * 2);
+/* Solution → Results → Outcome read as one closing group */
+.case-text-block--feature + .case-text-block--follow,
+.case-text-block--follow + .case-text-block--follow {
+  padding-top: calc(var(--space-section-sm) * 1.5);
 }
 
 .case-text-block .case-section-title {
@@ -467,8 +467,7 @@ html.js-reveal .case-reveal.is-visible > * {
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   margin-top: var(--space-subsection);
-  padding-top: var(--space-subsection);
-  border-top: 1px solid rgba(26, 19, 16, 0.12);
+  padding-top: 0;
 }
 
 .solution-card {
@@ -1000,9 +999,9 @@ html.js-reveal .case-reveal.is-visible > * {
     margin-top: calc(var(--space-subsection) + var(--space-block));
   }
 
-  .case-text-block--feature + .case-text-block--feature,
-  .case-text-block--feature + .case-text-block {
-    padding-top: calc(var(--space-section-sm) * 2);
+  .case-text-block--feature + .case-text-block--follow,
+  .case-text-block--follow + .case-text-block--follow {
+    padding-top: calc(var(--space-subsection) * 1.5);
   }
 
   .case-text-block--feature {
