@@ -1,5 +1,5 @@
 :root {
-    color-scheme: only light;
+    color-scheme: light dark;
     --bg: #fff;
     --ink: #1A1310;
     --red: #B3241C;
@@ -20,15 +20,41 @@
     overflow-x: hidden;
   }
 
-  /* Prevent browser/OS dark-mode from recoloring the page */
+  /* Explicit light palette when OS/browser prefers dark (Samsung Internet reads this) */
   @media (prefers-color-scheme: dark) {
     :root {
-      color-scheme: only light;
+      color-scheme: light dark;
+      --bg: #fff;
+      --ink: #1A1310;
     }
+
     html,
-    body {
+    body,
+    nav,
+    .next-section,
+    .offers,
+    .work-section,
+    .about-section,
+    .connect-section,
+    .footer-cta {
       background-color: #fff !important;
       color: #1A1310 !important;
+    }
+
+    nav {
+      border-bottom-color: rgba(26, 19, 16, 0.08) !important;
+    }
+
+    .hero-headline,
+    .offer-text h3,
+    .work-project-title,
+    .about-text p strong,
+    .role-row .role-title,
+    .skills-col h4,
+    .connect-links a,
+    .connect-cta-title,
+    .footer-cta-title {
+      color: inherit;
     }
   }
 
@@ -795,4 +821,22 @@
 
   @media (prefers-reduced-motion: reduce) {
     .illu { transition: none !important; }
+  }
+
+  /* Samsung Internet force-dark applies a proprietary color transform.
+     When detected, counter-invert the page and re-invert media assets. */
+  html.is-samsung-internet.samsung-night-correction {
+    filter: invert(1) hue-rotate(180deg);
+    -webkit-filter: invert(1) hue-rotate(180deg);
+    background-color: #000 !important;
+  }
+
+  html.is-samsung-internet.samsung-night-correction img,
+  html.is-samsung-internet.samsung-night-correction video,
+  html.is-samsung-internet.samsung-night-correction picture,
+  html.is-samsung-internet.samsung-night-correction svg,
+  html.is-samsung-internet.samsung-night-correction iframe,
+  html.is-samsung-internet.samsung-night-correction canvas {
+    filter: invert(1) hue-rotate(180deg);
+    -webkit-filter: invert(1) hue-rotate(180deg);
   }

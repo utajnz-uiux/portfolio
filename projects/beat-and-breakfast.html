@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="color-scheme" content="light">
+<meta name="color-scheme" content="light dark">
 <meta name="supported-color-schemes" content="light">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>:root{color-scheme:only light}html,body{background-color:#fff!important;color:#1A1310!important}</style>
+<script>if(/SamsungBrowser/i.test(navigator.userAgent))document.documentElement.classList.add('is-samsung-internet');</script>
+<style>:root{color-scheme:light dark}html,body{background-color:#fff!important;color:#1A1310!important}</style>
 <title>Beat and Breakfast — Uta Janzen</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/styles.css?v=25">
+<link rel="stylesheet" href="../assets/css/styles.css?v=26">
 <link rel="stylesheet" href="../assets/css/case-study.css?v=26">
 </head>
 <body>
@@ -118,7 +119,7 @@ The challenge: move the on-/offline booking flow from email traffic to a smooth 
 
   <section class="case-media-block case-reveal">
     <div class="case-container">
-      <video class="case-media-video" src="../assets/videos/projects/beat-and-breakfast/website-bounce.mp4?v=hq" poster="../assets/videos/projects/beat-and-breakfast/website-bounce-poster.jpg?v=hq" autoplay muted loop playsinline preload="auto" aria-label="Beat and Breakfast website scroll demo"></video>
+      <video class="case-media-video" src="../assets/videos/projects/beat-and-breakfast/website-bounce.mp4?v=hq" poster="../assets/videos/projects/beat-and-breakfast/website-bounce-poster.jpg?v=hq" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="auto" aria-label="Beat and Breakfast website scroll demo"></video>
     </div>
   </section>
 
@@ -207,7 +208,7 @@ The challenge: move the on-/offline booking flow from email traffic to a smooth 
       <p class="case-lead">Four principles guided every screen — from how prices are labeled to which booking path a guest takes. Each principle maps to a concrete pattern in the booking plugin.</p>
 
       <figure class="case-demo-video">
-        <video class="case-media-video case-media-video--demo" src="../assets/videos/projects/beat-and-breakfast/booking-flow-demo.mp4?v=hq3" poster="../assets/videos/projects/beat-and-breakfast/booking-flow-demo-poster.jpg?v=hq3" autoplay muted loop playsinline preload="auto" aria-label="Beat and Breakfast booking flow walkthrough"></video>
+        <video class="case-media-video case-media-video--demo" src="../assets/videos/projects/beat-and-breakfast/booking-flow-demo.mp4?v=hq3" poster="../assets/videos/projects/beat-and-breakfast/booking-flow-demo-poster.jpg?v=hq3" autoplay muted defaultMuted loop playsinline webkit-playsinline preload="auto" aria-label="Beat and Breakfast booking flow walkthrough"></video>
       </figure>
 
       <div class="solution-grid">
@@ -304,8 +305,9 @@ Designing for a musician audience meant leaning into bold Metropolis typography 
   </div>
 </footer>
 
+<script src="../assets/js/samsung-light-fix.js?v=1"></script>
 <script src="../assets/js/site-config.js"></script>
 <script src="../assets/js/booking-links.js"></script>
-<script src="../assets/js/case-study.js"></script>
+<script src="../assets/js/case-study.js?v=2"></script>
 </body>
 </html>

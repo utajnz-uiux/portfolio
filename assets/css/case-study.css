@@ -1,3 +1,16 @@
+@media (prefers-color-scheme: dark) {
+  body:has(.case-study),
+  body:has(.case-study) .case-nav,
+  body:has(.case-study) .footer-cta,
+  body:has(.case-study) .case-footer,
+  .case-study,
+  .case-media-block,
+  .case-text-block {
+    background-color: #fff !important;
+    color: #1A1310 !important;
+  }
+}
+
 .case-study {
   padding-top: 5.2rem;
   --space-section: 8rem;
