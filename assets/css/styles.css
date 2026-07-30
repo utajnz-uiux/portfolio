@@ -712,12 +712,45 @@
     padding: 3rem 0 8rem;
     background: #fff;
   }
-  .connect-grid {
+
+  .connect-layout {
     display: grid;
     grid-template-columns: 1fr 1.1fr;
-    gap: 4rem;
+    grid-template-areas:
+      "skills-head connect-head"
+      "skills-body intro"
+      "skills-body links"
+      "skills-body cta";
+    column-gap: 4rem;
     align-items: start;
   }
+
+  .connect-eyebrow--skills { grid-area: skills-head; }
+  .connect-eyebrow--connect { grid-area: connect-head; }
+
+  .connect-layout .skills-columns {
+    grid-area: skills-body;
+  }
+
+  .connect-intro {
+    grid-area: intro;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: rgba(26, 19, 16, 0.6);
+    margin: 0 0 1.6rem;
+    padding-top: 0.1rem;
+  }
+
+  .connect-layout .connect-links {
+    grid-area: links;
+    margin-bottom: 2rem;
+  }
+
+  .connect-layout .connect-cta {
+    grid-area: cta;
+    padding-top: 0.25rem;
+  }
+
   .skills-columns {
     display: flex;
     gap: 3rem;
@@ -736,18 +769,10 @@
     font-size: 0.98rem;
     line-height: 1.9;
   }
-  .connect-inner p {
-    font-size: 1.05rem;
-    line-height: 1.6;
-    color: rgba(26, 19, 16, 0.6);
-    max-width: 44ch;
-    margin-bottom: 1.6rem;
-  }
   .connect-links {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-bottom: 2rem;
   }
   .connect-links a {
     color: var(--ink);
@@ -813,9 +838,21 @@
   }
 
   @media (max-width: 860px) {
-    .connect-grid {
+    .connect-layout {
       grid-template-columns: 1fr;
-      gap: 3rem;
+      grid-template-areas:
+        "skills-head"
+        "skills-body"
+        "connect-head"
+        "intro"
+        "links"
+        "cta";
+      row-gap: 0;
+    }
+
+    .connect-intro {
+      max-width: none;
+      margin-top: 0;
     }
   }
 
