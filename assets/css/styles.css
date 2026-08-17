@@ -410,6 +410,30 @@
     color: rgba(26, 19, 16, 0.45);
   }
 
+  .work-project-status:not(:has(a)) {
+    display: inline-block;
+    margin-top: 0.35rem;
+    margin-bottom: 0.75rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 6px;
+    background: var(--ink);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .work-project--soon:not(.work-project--thesis) .work-project-meta {
+    margin-bottom: 0.5rem;
+  }
+
+  .work-project--soon:not(.work-project--thesis) .work-project-title {
+    margin-bottom: 0.65rem;
+  }
+
   .work-project-status-sep {
     margin: 0 0.35em;
   }
@@ -485,6 +509,7 @@
   }
 
   .work-project-media {
+    aspect-ratio: 1024 / 595;
     overflow: hidden;
     border-radius: 12px;
     isolation: isolate;
@@ -498,6 +523,7 @@
 
   .work-project-media a {
     display: block;
+    height: 100%;
     text-decoration: none;
     overflow: hidden;
     border-radius: 12px;
@@ -506,20 +532,27 @@
   .work-project-media img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 12px;
+    object-fit: cover;
+    object-position: top center;
     vertical-align: top;
   }
 
   .work-project-media--placeholder {
-    aspect-ratio: 16 / 10;
-    background: repeating-linear-gradient(
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    background-color: #f6f2ec;
+    background-image: repeating-linear-gradient(
       135deg,
-      rgba(26, 19, 16, 0.05),
-      rgba(26, 19, 16, 0.05) 10px,
-      rgba(26, 19, 16, 0.025) 10px,
-      rgba(26, 19, 16, 0.025) 20px
+      rgba(26, 19, 16, 0.07) 0,
+      rgba(26, 19, 16, 0.07) 10px,
+      rgba(26, 19, 16, 0.035) 10px,
+      rgba(26, 19, 16, 0.035) 20px
     );
+    border: none;
     border-radius: 12px;
   }
 
@@ -626,6 +659,12 @@
     .work-project-status {
       margin-top: 1rem;
       margin-bottom: 1.5rem;
+    }
+
+    .work-project-status:not(:has(a)) {
+      margin-top: 0.5rem;
+      margin-bottom: 0.85rem;
+      font-size: 0.75rem;
     }
   }
 
